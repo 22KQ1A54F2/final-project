@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 1;
+}
+
+.navbar {
+     background: url("https://www.oyorooms.com/blog/wp-content/uploads/2019/04/shutterstock_472868326.jpg");no-repeat center center fixed;
+     padding: 1rem 0;  
+     background-size: cover;
+     padding: 1rem 0; }
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+.nav-item {
+    margin: 0 1rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: rgb(145, 28, 28);
+    font-size: 1.2rem;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.nav-link:hover {
+    color: #FFD700;
+    animation: hover-animation 0.3s forwards;
+}
+
+@keyframes hover-animation {
+    0% {
+        color: white;
+        letter-spacing: normal;
+    }
+    100% {
+        color: #FFD700;
+        letter-spacing: 2px;
+    }
+}
+
+.nav-link.active {
+    color: #FFD700;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.section {
+    padding: 4rem 0;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="./reg.html" class="nav-link">Register</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+                <li class="nav-item"><a href="./destinations.html" class="nav-link">Destinations</a></li>
+                <li class="nav-item"><a href="./services.html" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact Us</a></li>
+            </ul>
+        </nav>
+
+                    
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
+
+

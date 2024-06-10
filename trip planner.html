@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thailand Travel Planning</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+        .package-container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .package-title {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .package-details {
+            font-size: 14px;
+            color: #666;
+            margin-top: 10px;
+            text-align: center;
+        }
+        .package-image {
+            max-width: 100%;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .select-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 8px 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .package-info {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #333;
+            text-align: center;
+        }
+        .discount {
+            color: green;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .coupon {
+            color: blue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<header>
+<center><h1>PACKAGES AVAILABLE</h1></center><br>
+</header>
+<body>
+    <div class="package-container">
+        <div class="package-title">Pattaya Package</div>
+        <img class="package-image" src="https://media1.thrillophilia.com/filestore/oai9rstqd48k54i4coahj9832zkd_shutterstock_2278422161.jpg?w=400&dpr=2"  width="250" height="250"alt="Pattaya Beach">
+        <div class="package-details">3 Nights | Beaches, Nightlife, Water Sports</div>
+        <div class="package-info">
+            <span class="discount">Discount: 10%</span>
+            <span class="coupon">Coupon: SUMMER2024</span>
+            <br>
+            <span class="budget">Budget: $500</span>
+        </div>
+        <button class="select-button" onclick="selectPackage('Pattaya')">Select</button>
+    </div>
+
+    <div class="package-container">
+        <div class="package-title">Phuket Package</div>
+        <img class="package-image" src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/514319984.jpg?k=395e1989e2982f388801f3cb06c3440b180209c3eb63f06500a3784dc1452113&o=&hp=1" alt="Phuket Beach">
+        <div class="package-details">4 Nights | Island Tours, Snorkeling, Night Markets</div>
+        <div class="package-info">
+            <span class="discount">Discount: 15%</span>
+            <span class="coupon">Coupon: SUMMERDEAL</span>
+            <br>
+            <span class="budget">Budget: $700</span>
+        </div>
+        <button class="select-button" onclick="selectPackage('Phuket')">Select</button>
+    </div>
+
+    <div class="package-container">
+        <div class="package-title">Bangkok Package</div>
+        <img class="package-image" src="https://ik.imagekit.io/tvlk/blog/2017/03/shutterstock_540821347.jpg?tr=dpr-2,w-675" alt="Bangkok City">
+        <div class="package-details">2 Nights | Temples, Street Food, Shopping</div>
+        <div class="package-info">
+            <span class="discount">Discount: 5%</span>
+            <span class="coupon">Coupon: BKK2024</span>
+            <br>
+            <span class="budget">Budget: $400</span>
+        </div>
+        <button class="select-button" onclick="selectPackage('Bangkok')">Select</button>
+    </div>
+
+    <div class="package-container">
+        <div class="package-title">Krabi Package</div>
+        <img class="package-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyL5F4PLvx3C-qbxubeZC1y6jXKd2ub88JVA&usqp=CAU" alt="Krabi Beach">
+        <div class="package-details">3 Nights | Island Hopping, Rock Climbing, Thai Cuisine</div>
+        <div class="package-info">
+            <span class="discount">Discount: 12%</span>
+            <span class="coupon">Coupon: KRABI2024</span>
+            <br>
+            <span class="budget">Budget: $600</span>
+        </div>
+        <button class="select-button" onclick="selectPackage('Krabi')">Select</button>
+    </div>
+
+    <div class="package-container">
+        <div class="package-title">Chiang Mai Package</div>
+        <img class="package-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeDWLmIUTjXQ7lCN6wLCYAWZ5kWPAY7UrxAJiEVIbgHLnTw1Zhw49ORIZ82RskcX-gG2c&usqp=CAU" alt="Chiang Mai City">
+        <div class="package-details">3 Nights | Temples, Elephant Sanctuaries, Night Bazaars</div>
+        <div class="package-info">
+            <span class="discount">Discount: 8%</span>
+            <span class="coupon">Coupon: CHIANGMAI2024</span>
+            <br>
+            <span class="budget">Budget: $450</span>
+        </div>
+        <button class="select-button" onclick="selectPackage('Chiang Mai')">Select</button>
+    </div>
+
+    <script>
+        function selectPackage(packageName) {
+            alert(`You've selected the ${packageName} package!`);
+            // Add further logic (e.g., redirect to booking page) here
+        }
+    </script>
+</body>
+</html>
+

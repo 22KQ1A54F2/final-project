@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thailand Tourism - Destinations</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .background-cover {
+            background: url('path-to-your-image.jpg') no-repeat center center fixed; /* Replace with your image path */
+            background-size: cover;
+            height: 100vh;
+            overflow: auto;
+        }
+
+        header {
+            background-color: transparent;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            margin: 20px 0;
+        }
+
+        .nav-menu {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            background-color: none; /* Semi-transparent background */
+        }
+
+        .nav-item {
+            margin: 0 20px;
+        }
+
+        .nav-item a {
+            display: block;
+            padding: 15px 20px;
+            color: black;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .nav-item a:hover {
+            background-color: #ff9800;
+            color: #fff;
+        }
+
+        main {
+            padding: 2rem;
+            padding-top: 80px; /* To avoid overlap with fixed header */
+        }
+
+        .destinations {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .destination {
+            flex: 1 1 200px;
+            margin: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+            text-align: center;
+        }
+
+        .destination img {
+            width: 100%;
+            height: 200px;
+        }
+
+        .destination h2 {
+            margin: 0;
+            padding: 1rem 0;
+            background-color: #f8f8f8;
+        }
+
+        .destination:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .destinations {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .destination {
+                flex: 1 1 100%;
+            }
+        }
+
+        .explore-button {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            margin: 1rem 0;
+            background-color: #af4ca0;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+
+        .explore-button:hover {
+            background-color: #a04597;
+        }
+
+        .trip-planner {
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .trip-planner a {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            margin: 1rem 0;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .trip-planner a:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-cover"><br><br><br><br>
+        <header>
+            <h1>Thailand Tourism - Top Destinations</h1>
+            <nav>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#home">HOME</a></li>
+                    <li class="nav-item"><a href="./reg.html">REGISTER</a></li>
+                    <li class="nav-item"><a href="./login.html">LOGIN</a></li>
+                    <li class="nav-item"><a href="./dest.html">DESTINATIONS</a></li>
+                    <li class="nav-item"><a href="./services.html">SERVICES</a></li>
+                    <li class="nav-item"><a href="./Blog.html">BLOG</a></li>
+                    <li class="nav-item"><a href="./conct.html">CONTACT US</a></li>
+                    <li class="nav-item"><a href="./activities.html">ACTIVITIES</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <div id="destinations" class="destinations">
+                <div class="destination">
+                    <img src="https://media2.thrillophilia.com/images/photos/000/125/889/original/1517925622_shu-Thailand-Phuket-Patong-306226703-John-Walker-copy_(1).jpg?width=975&height=600" alt="Phuket">
+                    <h2>Phuket</h2>
+                    <button class="explore-button" >Explore</button>
+                </div>
+                <div class="destination">
+                    <img src="https://imgcld.yatra.com/ytimages/image/upload/t_seo_Holidays_w_640_h_480_c_fill_g_auto_q_auto:good_f_jpg/v1513591811/Phi_Phi_Leh_Island_1513592219.jpg" alt="Pattaya">
+                    <h2>Pattaya</h2>
+                    <button class="explore-button" data-video-url="https://www.youtube.com/watch?v=G9dDwjI3nCE">Explore</button>
+                </div>
+                <div class="destination">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/350599279.jpg?k=a5e491a7f969edd33907623ed53a6fe0ec67e5761664cbbdeffc1fbd436d36d0&o=&hp=1" alt="Bangkok">
+                    <h2>Bangkok</h2>
+                    <button class="explore-button" data-video-url="https://www.youtube.com/watch?v=s5CO-wVhq5Y">Explore</button>
+                </div>
+                <div class="destination">
+                    <img src="https://resources.thomascook.in/images/holidays/sightSeeing/776232_Coral_Island_Krabi_960.jpg" alt="Krabi">
+                    <h2>Krabi</h2>
+                    <button class="explore-button" data-video-url="https://www.youtube.com/watch?v=wgXcLMe8hxc">Explore</button>
+                </div>
+                <div class="destination">
+                    <img src="https://a.cdn-hotels.com/gdcs/production33/d816/6fc16dc5-a618-4a11-afe8-c7906e744b07.jpg?impolicy=fcrop&w=800&h=533&q=medium" alt="Chiang Mai">
+                    <h2>Chiang Mai</h2>
+                    <button class="explore-button" data-video-url="https://www.youtube.com/watch?v=1SwLHoWZg_k">Explore</button>
+                </div>
+            </div>
+            
+            <div id="trip-planner" class="trip-planner">
+                <h2>Trip Planner</h2>
+                <a href="trip planner.html" target="_blank">Packages</a>
+                <a href="book.html" target="_blank">Bookings</a>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Thailand Tourism</p>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var buttons = document.querySelectorAll('.explore-button');
+
+            buttons.forEach(function (button) {
+                button.addEventListener('click', function () {
+                    var videoUrl = button.getAttribute('data-video-url');
+                    window.open(videoUrl, '_blank');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

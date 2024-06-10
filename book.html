@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Session Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+       @media screen and (min-width: 767px)  {
+                .container {
+                    width: 100%;
+                    padding: 5px 10px;
+                }
+                        }
+
+            /* tablets , iPads (portait and landscape )----------  */
+             
+         @media screen and (min-width: 768px) and (max-width: 1024px)  {
+               
+            .container {
+                    width: 750px;
+                    padding: 5px 10px;
+                }
+            }
+
+
+          /* Low resolution Desktops and laptops ----------  */
+             
+          @media screen and (min-width: 1024px)  {
+            .container {
+                    width: 980px;
+                    padding: 5px 15px;
+                }
+            }
+      
+          /* High  resolution Desktops and laptops ----------  */
+             
+          @media screen and (min-width: 1280px)  {
+            .container {
+                    width: 1200px;
+                    padding: 5px 20px;
+                }
+            }
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Main container with background image */
+.main-container {
+    background: url('https://as2.ftcdn.net/v2/jpg/05/69/43/11/1000_F_569431169_tY0gbVc1HRlzZvLrFQxCr35UW8sMrYz3.jpg') no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form container */
+.form-container {
+    background: transparent; /* semi-transparent background */
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Form styling */
+.booking-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.booking-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.booking-form label {
+    margin-bottom: 5px;
+}
+
+.booking-form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid:blur;
+    border-radius: 5px;
+}
+
+.booking-form button {
+    padding: 10px;
+    background-color: #f3a710;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width:200px;
+}
+
+.booking-form button:hover {
+    background-color: #176897;
+}
+</style>
+<body>
+    <div class="main-container">
+        <div class="form-container">
+            <form class="booking-form">
+                <center><h1>BOOKINGS</h1></center>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="session-date">Session Date:</label>
+                <input type="date" id="session-date" name="session-date" required>
+                
+                <label for="session-time">Session Time:</label>
+                <input type="time" id="session-time" name="session-time" required>
+                
+                <center><button type="submit">Book Session</button></center>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+

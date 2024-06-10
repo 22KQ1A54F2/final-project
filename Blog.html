@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiences in Thailand</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+       @media screen and (min-width: 767px)  {
+                .container {
+                    width: 100%;
+                    padding: 5px 10px;
+                }
+                        }
+
+            /* tablets , iPads (portait and landscape )----------  */
+             
+         @media screen and (min-width: 768px) and (max-width: 1024px)  {
+               
+            .container {
+                    width: 750px;
+                    padding: 5px 10px;
+                }
+            }
+
+
+          /* Low resolution Desktops and laptops ----------  */
+             
+          @media screen and (min-width: 1024px)  {
+            .container {
+                    width: 980px;
+                    padding: 5px 15px;
+                }
+            }
+      
+          /* High  resolution Desktops and laptops ----------  */
+             
+          @media screen and (min-width: 1280px)  {
+            .container {
+                    width: 1200px;
+                    padding: 5px 20px;
+                }
+            }
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+section {
+    padding: 20px;
+    margin: 10px 0;
+}
+
+#categories {
+    background-color: aquamarine;
+}
+
+.category-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.category {
+    background-color: #656a68;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+}
+
+#featured-experiences .experience-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.experience {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+}
+
+.experience img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.testimonial-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.testimonial {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1;
+    min-width: 250px;
+}
+
+.rating {
+    color: gold;
+    font-size: 1.2em;
+}
+
+#map, #tips, #cta {
+    background-color: #ecf0f1;
+    text-align: center;
+}
+
+#cta button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#cta button:hover {
+    background-color: #c0392b;
+}
+button:hover.stars {
+    display:block;
+    filter:drop-shadow(0 0 10px #fffdef);
+}
+    
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+</style>
+<body>
+    <header>
+        <h1> Blog-Experiences in Thailand</h1>
+        <p>Discover the Wonders of the Land of Smiles</p>
+    </header>
+    <section id="featured-experiences">
+        <h2>Featured Experiences</h2>
+        <div class="experience-container">
+            <div class="experience">
+                <img src="https://www.planetware.com/wpimages/2022/03/thailand-bangkok-grand-palace-highlights-visitors-guide-intro-paragraph.jpg" alt="Grand Palace">
+                <h3>Grand Palace Visit</h3>
+                <p>Discover the historical grandeur of the Grand Palace in Bangkok.</p>
+            </div>
+            <div class="experience">
+                <img src="https://cdn.kimkim.com/files/a/images/5a0767c8c11866366fac99580ab3618e412a6db5/original-decd53852e65299f8dbc30974c29fb33.jpg" alt="Chiang Mai">
+                <h3>Chiang Mai Temples</h3>
+                <p>Explore the ancient temples of Chiang Mai.</p>
+            </div>
+            <div class="experience">
+                <img src="https://www.pelago.co/img/destinations/phuket/0502-0403_phuket.jpg" alt="Phuket Beaches">
+                <h3>Phuket Beaches</h3>
+                <p>Relax on the stunning beaches of Phuket.</p>
+            </div>
+        </div>
+    </section>
+    
+
+    
+    <section id="categories">
+        <h2>Categories of Experiences</h2>
+        <div class="category-container">
+            <div class="category">
+                <h3>Cultural Experiences</h3>
+                <p>Explore the rich cultural heritage of Thailand.</p>
+            </div>
+            <div class="category">
+                <h3>Nature & Adventure</h3>
+                <p>Embark on thrilling adventures in Thailand's natural landscapes.</p>
+            </div>
+            <div class="category">
+                <h3>Wellness & Retreats</h3>
+                <p>Rejuvenate your body and mind with wellness retreats.</p>
+            </div>
+            <div class="category">
+                <h3>Cuisine & Dining</h3>
+                <p>Savor the exquisite flavors of Thai cuisine.</p>
+            </div>
+            <div class="category">
+                <h3>Festivals & Events</h3>
+                <p>Join in the vibrant celebrations and festivals.</p>
+            </div>
+            <div class="category">
+                <h3>Beach & Island Getaways</h3>
+                <p>Relax on pristine beaches and beautiful islands.</p>
+            </div>
+        </div>
+    </section>
+    
+   
+    
+    <section id="testimonials">
+        <h2>What Our Visitors Say</h2>
+        <div class="testimonial-container">
+            <div class="testimonial">
+                <h3>John Doe, USA</h3>
+                <p>"The Grand Palace tour was amazing! A must-visit in Bangkok."</p>
+                <div class="rating">★★★★★</div>
+            </div>
+            <div class="testimonial">
+                <h3>Jane Smith, UK</h3>
+                <p>"Chiang Mai's temples are breathtaking. Such a serene experience."</p>
+                <div class="rating">★★★★★</div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="map">
+        <h2>Explore Experiences on the Map</h2>
+        <p>Interactive map coming soon!</p>
+    </section>
+    
+    <section id="tips">
+        <h2>Travel Tips for a Memorable Experience</h2>
+        <ul>
+            <li>Respect local customs and traditions.</li>
+            <li>Stay hydrated and wear sunscreen.</li>
+            <li>Learn basic Thai phrases.</li>
+        </ul>
+    </section>
+    <section id="cta">
+        <h2>Ready to Start Your Adventure?</h2>
+        <button>BOOKINGS</button>
+        <button>CONTACT US</button>
+        <button>Plan Your Trip</button>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Thailand Tourism. All rights reserved.</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank">Facebook</a> |
+            <a href="https://www.twitter.com" target="_blank">Twitter</a> |
+            <a href="https://www.instagram.com" target="_blank">Instagram</a> |
+            <a href="https://www.youtube.com" target="_blank">YouTube</a>
+        </div>
+    </footer>
+</body>
+</html>
+

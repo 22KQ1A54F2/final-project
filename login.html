@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Thailand Tourism</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+/* Existing styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY0BGfGZ37Tp1x1fbna6JVAPH8PgHsy-5WOQ&s");
+    background-size: cover;
+    overflow-x: hidden;
+}
+.header {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 1;
+}
+
+.navbar {
+    background-color: transparent;
+    padding: 1rem 0;
+}
+
+
+/* Container to hold the form */
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item {
+    margin: 0 1rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: transparent;
+    font-size: 1.2rem;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.nav-link:hover {
+    color: #FFD700;
+    animation: hover-animation 0.3s forwards;
+}
+
+@keyframes hover-animation {
+    0% {
+        color: rgb(111, 16, 16);
+        letter-spacing: normal;
+    }
+    100% {
+        color: #FFD700;
+        letter-spacing: 2px;
+    }
+}
+
+.nav-link.active {
+    color: #FFD700;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.section {
+    padding: 4rem 0;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Registration and Login Form Styles */
+.registration-form, .login-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.registration-form label, .login-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.registration-form input, .login-form input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border:  1px solid #ccc;
+    border-radius: 4px;
+}
+
+.registration-form .btn, .login-form .btn {
+    width: 50%;
+    padding: 0.75rem;
+    background-color: #e85a9e;
+    color: rgb(168, 46, 46);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.registration-form .btn:hover, .login-form .btn:hover {
+    background-color: #45a049;
+}
+
+</style>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="reg.html" class="nav-link">Register</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+                <li class="nav-item"><a href="destinations.html" class="nav-link">Destinations</a></li>
+                <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="conct.html" class="nav-link">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="login" class="section">
+            <div class="container">
+                <h2 class="section-title">Login</h2>
+                <form action="submit_login" method="POST" class="login-form">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                    
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                    
+                <center><button type="submit"class=btn>Login</button></center>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
